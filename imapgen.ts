@@ -21,7 +21,7 @@ const transformDependencies = (dependencies: PackageJSONDependencies) =>
 const getDependencyName = (dependency: Dependency) => <string>dependency.split('@')[0];
 
 const getDependencyVersion = (dependency: Dependency) =>
-  <DependencyVersion>dependency.split('@')[1];
+  <DependencyVersion>dependency.split('@')[1].slice(1);
 
 const getUnpkgURL = (dependency: Dependency) => {
   const name = getDependencyName(dependency);
