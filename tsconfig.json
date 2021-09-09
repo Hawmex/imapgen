@@ -5,7 +5,7 @@
     "module": "ESNext",
     "lib": ["ESNext"],
     "declaration": true,
-    "outDir": "dist",
+    "outDir": "bin",
     "rootDir": ".",
     "strict": true,
     "noUnusedLocals": true,
@@ -21,5 +21,5 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["./**/*.ts", "package.json"]
+  "include": ["./**/*.ts"]
 }

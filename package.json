@@ -1,0 +1,27 @@
+{
+  "name": "imapgen",
+  "version": "0.1.0",
+  "description": "An importmap generator.",
+  "main": "bin/imapgen.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^16.9.0",
+    "typescript": "^4.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "imapgen": "bin/imapgen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawmex/imapgen.git"
+  },
+  "author": "Hamed Aarab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hawmex/imapgen/issues"
+  },
+  "homepage": "https://github.com/hawmex/imapgen#readme"
+}
