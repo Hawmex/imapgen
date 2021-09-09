@@ -6,10 +6,13 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^16.9.0",
+    "prettier": "^2.4.0",
     "typescript": "^4.4.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc && npx prettier bin/**/*.{js,d.ts} --write",
+    "postversion": "git push && git push --tags && npm publish",
+    "prepare": "npm run build"
   },
   "bin": {
     "imapgen": "bin/imapgen.js"
